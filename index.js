@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var mongoose = require('mongoose')
-mongoose.connect("mongodb://gaurav:26january@ds021034.mlab.com:21034/gaurav_test");
+mongoose.connect("mongodb://gaurav:<yourpassword>@ds021034.mlab.com:21034/gaurav_test");
 var db = mongoose.connection;
 db.once('open',function(){
 	console.log('huh');
